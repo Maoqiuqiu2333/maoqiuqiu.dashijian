@@ -1,0 +1,49 @@
+body{
+    font: 14px 'Helvetica Neue','Helvetica','PingFang SC','Tahoma','Arial','sans-serif';
+}
+.layui-footer{
+    font-size: 12px;
+    text-align: center;
+}
+.iconfont{
+    margin-right: 6px;
+    font-size: 16px;
+}
+.layui-icon{
+    margin-left: 15px;
+    margin-right: 6px;
+}
+.layui-body{
+    overflow: hidden;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+}
+.userinfo{
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 12px;
+    /* 禁止用户选中文字 */
+    user-select: none;
+}
+
+.layui-side-scroll .userinfo{
+    height: 72px;
+    line-height: 72px;
+    border-bottom: 1px solid #000;
+}
+
+.text-avatar{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #009688;
+    line-height: 30px;
+    border-radius: 50%;
+    font-size: 16px;
+    vertical-align: middle;
+    margin-right: 10px;
+    color: #fff;
+}
