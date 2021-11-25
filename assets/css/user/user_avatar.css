@@ -58,7 +58,7 @@ body {
     align-items: center;
   }
   
-  /* 设置 img-preview 区域的样式 */
+  /* 设置 img-preview 区域的样式   */
   .img-preview {
     overflow: hidden;
     border-radius: 50%;

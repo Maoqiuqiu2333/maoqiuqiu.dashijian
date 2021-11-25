@@ -47,9 +47,9 @@ $(function () {
             // 清空表单 - DOM对象的reset();
             $("#formPwd")[0].reset();
             // // 重新登录
-            // setTimeout(function () {
-            //     window.parent.location.href = '/login.html';
-            // }, 1500);
+            setTimeout(function () {
+                window.parent.location.href = '/login.html';
+            }, 1500);
         });
     })
 });
