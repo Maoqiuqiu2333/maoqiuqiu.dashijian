@@ -1,41 +1,48 @@
-body{
+body,html {
     width: 100%;
     height: 100%;
-    background: url("/assets/images/login_bg.jpg") no-repeat 0 0/cover;
-    /* background-size: cover; */
+    /* background: url('/assets/images/login_bg.jpg') no-repeat;
+    background-size: cover; */
+    background: url('/assets/images/login_bg.jpg') no-repeat 0 0 / cover;
 }
-.header{
+
+.header {
     padding-top: 20px;
 }
 
-.login-reg{
+.login-reg {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 400px;
     height: 310px;
-    background-color: #fff;
+    background: #fff;
 }
 
-.title-box{
+.title-box {
     height: 60px;
-    background: url(/assets/images/login_title.png) no-repeat center center;
+    background: url('/assets/images/login_title.png') no-repeat center;
 }
-.layui-form{
+
+.layui-form {
     padding: 0 30px;
 }
-.layui-form a{
+
+.layui-form-item a {
     font-size: 12px;
 }
-.layui-form-item{
+
+.layui-form-item {
     position: relative;
 }
-.layui-icon{
+
+.layui-icon {
     position: absolute;
     top: 10px;
     left: 10px;
 }
-.layui-input{
+
+.layui-input {
     padding-left: 30px;
 }

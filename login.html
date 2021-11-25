@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录&注册</title>
     <!-- 引入layui.css -->
     <link rel="stylesheet" href="/assets/lib/layui/css/layui.css">
     <!-- 引入css -->
@@ -23,67 +23,58 @@
         <!-- 2.1 标题部分 -->
         <div class="title-box"></div>
         <!-- 2.2 注册和登录区域 -->
-        <!-- 登录区域 -->
         <div id="loginBox">
-            <!-- 登录表单 -->
-            <!-- 注意1: class="layui-form" 这个类名,将来校验表单生效-->
+            <!-- 登陆表单 -->
+            <!-- 注意1: 一定要有类名: layui-form -->
             <form id="formLogin" class="layui-form" action="">
                 <!-- 1.用户名 -->
                 <div class="layui-form-item">
                     <i class="layui-icon layui-icon-username"></i>
-                    <input value="wang357" type="text" name="username" required lay-verify="required|username" placeholder="请输入用户名"
-                        autocomplete="off" class="layui-input">
+                    <input value="Maoqiuqiu" type="text" name="username" required lay-verify="required|username" placeholder="请输入用户名" autocomplete="off" class="layui-input">
                 </div>
                 <!-- 2.密码 -->
                 <div class="layui-form-item">
                     <i class="layui-icon layui-icon-password"></i>
-                    <input value="123123" type="password" name="password" required lay-verify="required|pwd" placeholder="请输入密码"
-                        autocomplete="off" class="layui-input">
+                    <input value="123123" type="password" name="password" required lay-verify="required|pwd" placeholder="请输入密码" autocomplete="off" class="layui-input">
                 </div>
                 <!-- 3.提交 -->
                 <div class="layui-form-item">
-                    <!-- 注意点2: type 属性没写,默认值 submit -->
-                    <!-- 注意点3: lay-submit 是属性,后面校验的时候生效 -->
-                    <button class="layui-btn layui-btn-normal layui-btn-fluid" lay-submit
-                        lay-filter="formDemo">登录</button>
+                    <!-- 注意2：button按钮，type不写默认submit; 如果写成 type="button" 就没有办法提交了 -->
+                    <!-- 注意3：lay-submit是属性，不是具体的某个值！不能没有; -->
+                    <button class="layui-btn layui-btn-normal layui-btn-fluid" lay-submit lay-filter="formDemo">登录</button>
                 </div>
-                <!-- 4.a链接 -->
+                <!-- 4.a连接 -->
                 <div class="layui-form-item">
-                    <a href="javascript:;">注册账号</a>
+                    <a href="javascript:;">去注册账号</a>
                 </div>
             </form>
         </div>
-        <!-- 注册区域 -->
         <div id="regBox" style="display: none;">
             <!-- 注册表单 -->
-            <!-- 注意1: class="layui-form" 这个类名,将来校验表单生效-->
+            <!-- 注意1: 一定要有类名: layui-form -->
             <form id="formReg" class="layui-form" action="">
                 <!-- 1.用户名 -->
                 <div class="layui-form-item">
                     <i class="layui-icon layui-icon-username"></i>
-                    <input type="text" name="username" required lay-verify="required|username" placeholder="请输入用户名"
-                        autocomplete="off" class="layui-input">
+                    <input type="text" name="username" required lay-verify="required|username" placeholder="请输入用户名" autocomplete="off" class="layui-input">
                 </div>
-                <!-- 2.密码 -->
+                <!-- 2.1 密码 -->
                 <div class="layui-form-item">
                     <i class="layui-icon layui-icon-password"></i>
-                    <input type="text" name="password" required lay-verify="required|pwd" placeholder="请输入密码"
-                        autocomplete="off" class="layui-input">
+                    <input type="text" name="password" required lay-verify="required|pwd" placeholder="请输入密码" autocomplete="off" class="layui-input">
                 </div>
                 <!-- 2.2 再次输入密码 -->
                 <div class="layui-form-item">
                     <i class="layui-icon layui-icon-password"></i>
-                    <input type="text" name="repassword" required lay-verify="required|repwd" placeholder="请再次输入密码"
-                        autocomplete="off" class="layui-input">
+                    <input type="text" name="repassword" required lay-verify="required|repwd" placeholder="请再次输入密码" autocomplete="off" class="layui-input">
                 </div>
-                <!-- 3.注册按钮 -->
+                <!-- 3.提交 -->
                 <div class="layui-form-item">
-                    <!-- 注意点2: type 属性没写,默认值 submit -->
-                    <!-- 注意点3: lay-submit 是属性,后面校验的时候生效 -->
-                    <button class="layui-btn layui-btn-normal layui-btn-fluid" lay-submit
-                        lay-filter="formDemo">注册</button>
+                    <!-- 注意2：button按钮，type不写默认submit; 如果写成 type="button" 就没有办法提交了 -->
+                    <!-- 注意3：lay-submit是属性，不是具体的某个值！不能没有; -->
+                    <button class="layui-btn layui-btn-normal layui-btn-fluid" lay-submit lay-filter="formDemo">注册</button>
                 </div>
-                <!-- 4.a链接 -->
+                <!-- 4.a连接 -->
                 <div class="layui-form-item">
                     <a href="javascript:;">去登录</a>
                 </div>
@@ -91,15 +82,15 @@
         </div>
     </div>
 
-    <!-- 引入 axios.js -->
+    <!-- 导入 axios.js -->
     <script src="/assets/lib/axios.js"></script>
-    <!-- 引入 common.js要在axios.js后面 -->
+    <!-- 导入 common.js要在axios.js只后，自己的js之前 -->
     <script src="/assets/js/common.js"></script>
-    <!-- 引入 layui.all.js -->
+    <!-- 导入 layui.all.js -->
     <script src="/assets/lib/layui/layui.all.js"></script>
-    <!-- 引入jQuery.js -->
+    <!-- 导入 jQuery.js -->
     <script src="/assets/lib/jquery.js"></script>
-    <!-- 引入自己的js -->
+    <!-- 导入 自己页面的 js -->
     <script src="/assets/js/login.js"></script>
 </body>
 

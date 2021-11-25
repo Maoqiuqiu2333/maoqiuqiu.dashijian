@@ -1,0 +1,12 @@
+body {
+    padding: 15px;
+    background: #f2f3f5;
+}
+
+.layui-card-header {
+    display: flex;
+    /* 设置子元素主轴方向排列顺序 */
+    justify-content: space-between;
+    /* 设置子元素，侧轴方向排列顺序(单行) */
+    align-items: center;
+}
